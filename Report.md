@@ -27,3 +27,22 @@
     - LR = 5e-4
   - #### How often to update the network
     - UPDATE_EVERY = 4
+
+## Plot of Rewards
+The environment was solved in 540 episodes, with the average reward score of 16 to indicate solving the environment.
+
+![](score.png)
+
+## Ideas for Future Work
+
+- Prioritized Experience Replay: I have adopted experience replay in the ddpg. But some of these experiences may be more important for learning than others. Moreover, these important experiences might occur infrequently. If we sample the batches uniformly, then these experiences have a very small chance of getting selected. Since buffers are practically limited in capacity, older important experiences may get lost. I will implement prioritized experience replay<sup>4</sup> will help to optimize the selection of experiences.
+
+References:
+1. Riedmiller, Martin. "Neural fitted Q iteration–first experiences with a data efficient neural reinforcement learning method." European Conference on Machine Learning. Springer, Berlin, Heidelberg, 2005. http://ml.informatik.uni-freiburg.de/former/_media/publications/rieecml05.pdf
+
+2. Mnih, Volodymyr, et al. "Human-level control through deep reinforcement learning." Nature518.7540 (2015): 529. http://www.davidqiu.com:8888/research/nature14236.pdf
+
+3. Wang, Schaul, et al. "Dueling Network Architectures for Deep Reinforcement Learning." 2015. https://arxiv.org/abs/1511.06581
+
+4. Schaul, Quan, et al. "Prioritized Experience Replay." ICLR (2016). https://arxiv.org/abs/1511.05952
+
