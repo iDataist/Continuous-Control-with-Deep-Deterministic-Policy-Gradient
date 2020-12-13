@@ -70,7 +70,7 @@ The observation space consists of 33 variables corresponding to position, rotati
         pip install -r requirements.txt
         ipython3 kernel install --name ddpg-env --user
         ```
-    - Open Jupyter Notebook, and open the Navigation.ipynb file.
+    - Open Jupyter Notebook, and open the Continuous_Control.ipynb file. Run all the cells in the jupyter notebook to train the agents.
         ```
         jupyter notebook
         ```
@@ -89,35 +89,16 @@ The observation space consists of 33 variables corresponding to position, rotati
        - Windows (32-bit): click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip)
        - Windows (64-bit): click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
 
-    b. Place the file in the folder with the jupyter notebook, and unzip (or decompress) the file.
-
     (For Windows users) Check out this [link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64) if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
 
     (For AWS) If you'd like to train the agent on AWS (and have not enabled a virtual screen), then please use this [link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux_NoVis.zip) (version 1) or this [link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux_NoVis.zip) (version 2) to obtain the "headless" version of the environment. You will not be able to watch the agent without enabling a virtual screen, but you will be able to train the agent. (To watch the agent, you should follow the instructions to enable a virtual screen, and then download the environment for the Linux operating system above.)
 
+    b. Place the file in the folder with the jupyter notebook, and unzip (or decompress) the file.
 
 ## File Descriptions
 
 1. [requirements.txt](https://github.com/iDataist/Navigation-with-Deep-Q-Network/blob/main/requirements.txt) - Includes all the required libraries for the Conda Environment.
-2. [model.py](https://github.com/iDataist/Navigation-with-Deep-Q-Network/blob/main/model.py) - Defines the QNetwork which is the nonlinear function approximator to calculate the value actions based directly on observation from the environment.
-3. [ddpg_agent.py](https://github.com/iDataist/Navigation-with-Deep-Q-Network/blob/main/ddpg_agent.py) -  Defines the Agent that uses Deep Learning to find the optimal parameters for the function approximators, determines the best action to take and maximizes the overall or total reward.
-4. [Navigation.ipynb](https://github.com/iDataist/Navigation-with-Deep-Q-Network/blob/main/Navigation.ipynb) - The main file that trains the Deep Q-Network and shows the trained agent in action. This file can be run in the Conda environment.
-
-## Plot of Rewards
-The environment was solved in 540 episodes, with the average reward score of 16 to indicate solving the environment.
-
-![](score.png)
-
-## Ideas for Future Work
-
-- Prioritized Experience Replay: I have adopted experience replay in the ddpg. But some of these experiences may be more important for learning than others. Moreover, these important experiences might occur infrequently. If we sample the batches uniformly, then these experiences have a very small chance of getting selected. Since buffers are practically limited in capacity, older important experiences may get lost. I will implement prioritized experience replay<sup>4</sup> will help to optimize the selection of experiences.
-
-References:
-1. Riedmiller, Martin. "Neural fitted Q iteration–first experiences with a data efficient neural reinforcement learning method." European Conference on Machine Learning. Springer, Berlin, Heidelberg, 2005. http://ml.informatik.uni-freiburg.de/former/_media/publications/rieecml05.pdf
-
-2. Mnih, Volodymyr, et al. "Human-level control through deep reinforcement learning." Nature518.7540 (2015): 529. http://www.davidqiu.com:8888/research/nature14236.pdf
-
-3. Wang, Schaul, et al. "Dueling Network Architectures for Deep Reinforcement Learning." 2015. https://arxiv.org/abs/1511.06581
-
-4. Schaul, Quan, et al. "Prioritized Experience Replay." ICLR (2016). https://arxiv.org/abs/1511.05952
+2. [model.py](https://github.com/iDataist/Continuous-Control-with-Deep-Deterministic-Policy-Gradient/blob/main/model.py) - Defines the QNetwork which is the nonlinear function approximator to calculate the value actions based directly on observation from the environment.
+3. [ddpg_agent.py](https://github.com/iDataist/Continuous-Control-with-Deep-Deterministic-Policy-Gradient/blob/main/ddpg_agent.py) -  Defines the Agent that uses Deep Learning to find the optimal parameters for the function approximators, determines the best action to take and maximizes the overall or total reward.
+4. [Continuous_Control.ipynb](https://github.com/iDataist/Continuous-Control-with-Deep-Deterministic-Policy-Gradient/blob/main/Continuous_Control.ipynb) - The main file that trains the networks. This file can be run in the Conda environment.
 
