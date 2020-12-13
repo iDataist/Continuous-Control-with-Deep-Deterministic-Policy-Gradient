@@ -97,8 +97,8 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 ## File Descriptions
 
-1. [requirements.txt](https://github.com/iDataist/Navigation-with-Deep-Q-Network/blob/main/requirements.txt) - Includes all the required libraries for the Conda Environment.
-2. [model.py](https://github.com/iDataist/Continuous-Control-with-Deep-Deterministic-Policy-Gradient/blob/main/model.py) - Defines the QNetwork which is the nonlinear function approximator to calculate the value actions based directly on observation from the environment.
-3. [ddpg_agent.py](https://github.com/iDataist/Continuous-Control-with-Deep-Deterministic-Policy-Gradient/blob/main/ddpg_agent.py) -  Defines the Agent that uses Deep Learning to find the optimal parameters for the function approximators, determines the best action to take and maximizes the overall or total reward.
-4. [Continuous_Control.ipynb](https://github.com/iDataist/Continuous-Control-with-Deep-Deterministic-Policy-Gradient/blob/main/Continuous_Control.ipynb) - The main file that trains the networks. This file can be run in the Conda environment.
+1. [requirements.txt](https://github.com/iDataist/Continuous-Control-with-Deep-Deterministic-Policy-Gradient/blob/main/requirements.txt) - Includes all the required libraries for the Conda Environment.
+2. [model.py](https://github.com/iDataist/Continuous-Control-with-Deep-Deterministic-Policy-Gradient/blob/main/model.py) - Defines the actor and critic networks.
+3. [ddpg_agent.py](https://github.com/iDataist/Continuous-Control-with-Deep-Deterministic-Policy-Gradient/blob/main/ddpg_agent.py) -  Defines the Agent that uses DDPG to determine the best action to take and maximizes the overall or total reward.
+4. [Continuous_Control.ipynb](https://github.com/iDataist/Continuous-Control-with-Deep-Deterministic-Policy-Gradient/blob/main/Continuous_Control.ipynb) - The main file that trains the actor and critic networks. This file can be run in the Conda environment.
 
