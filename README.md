@@ -95,7 +95,7 @@ The observation space consists of 33 variables corresponding to position, rotati
     To clone the repository, run the following command:
     ```
     cd PATH_OF_DIRECTORY
-    git clone https://github.com/iDataist/Navigation-with-Deep-Q-Network
+    git clone https://github.com/iDataist/Continuous-Control-with-Deep-Deterministic-Policy-Gradient
     ```
     c. Create local environment
 
