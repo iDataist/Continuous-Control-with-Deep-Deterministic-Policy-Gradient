@@ -1,6 +1,6 @@
 # Continuous Control with Deep Deterministic Policy Gradient
 
-In this project, I trained an double-jointed arm to move to target locations.
+In this project, I trained twenty double-jointed arms to move to target locations.
 
 ## Reinforcement Learning Environment
 
@@ -8,7 +8,7 @@ Unity Machine Learning Agents (ML-Agents) is an open-source Unity plugin that en
 
 ![](reacher.gif)
 
-In this environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
+In this environment, twenty double-jointed arms can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of the agent is to maintain its position at the target location for as many time steps as possible.
 
 The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1. The agents must get an average score of +30 (over 100 consecutive episodes, and over all agents) to solve the environment (version 1 or 2).
 
@@ -152,7 +152,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 4. [Continuous_Control.ipynb](https://github.com/iDataist/Continuous-Control-with-Deep-Deterministic-Policy-Gradient/blob/main/Continuous_Control.ipynb) - The main file that trains the actor and critic networks. This file can be run in the Conda environment.
 
 ## Plot of Rewards
-The environment was solved in 102 episodes.
+The environment was solved in 114 episodes.
 
 ![](score.png)
 
